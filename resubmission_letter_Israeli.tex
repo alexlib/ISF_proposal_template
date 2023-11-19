@@ -1,0 +1,116 @@
+\documentclass[11pt]{article}
+% \usepackage{lmodern}
+\usepackage[no-math]{fontspec}
+\setmainfont{Arial}
+
+\usepackage[margin=2cm,a4paper]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{graphicx}
+\graphicspath{{./fig/}}
+
+\usepackage{wrapfig}
+\usepackage[font={small,it}]{caption}
+\usepackage[backend=biber,
+%style=authoryear,
+style=numeric,
+doi=false,isbn=false,url=false,eprint=false,
+natbib,
+maxbibnames=10]{biblatex}
+\addbibresource{bibliography.bib}
+% \addbibresource{references.bib}
+
+% % Helper function to get initial letter
+% \def\firstinit#1{\justfirst#1\relax}
+% \def\justfirst#1#2\relax{#1}
+
+% % Format for FirstInitials - LastName (standard implementation)
+% \DeclareNameFormat{firstinits-last}{%
+% \usebibmacro{name:first-last}{#1}{#4}{#5}{#7}%
+% \usebibmacro{name:andothers}}
+
+% % Format for VeryFirstInitial - LastName
+% \DeclareNameFormat{firstfirstinit-last}{%
+% \usebibmacro{name:first-last}{#1}{\firstinit{#4}\adddot}{#5}{#7}%
+% \usebibmacro{name:andothers}}
+
+% % Set format for sortname (bibliography) and labelname (citation)
+% \DeclareNameAlias{sortname}{firstinits-last}
+% \DeclareNameAlias{labelname}{firstfirstinit-last}
+
+
+
+\usepackage{xcolor}
+\newcommand{\alex}[1]{\textcolor{blue}{#1}}
+
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+  
+\titleformat{\subsection}
+  {\normalfont\small\bfseries}{\thesubsection}{1em}{}
+  
+\usepackage{amsmath}  
+\makeatletter
+\DeclareRobustCommand{\V}{\text{\volumedash}V}
+\newcommand{\volumedash}{%
+  \makebox[0pt][l]{%
+    \ooalign{\hfil\hphantom{$\m@th V$}\hfil\cr\kern0.08em--\hfil\cr}%
+  }%
+}
+\makeatother
+
+\begin{document}
+\rightline{ISF application number: XXX/XX}
+\rightline{PI Name: Israel Israeli}
+
+\section*{Research title: great title }
+%\yardena{explain from the beginning deep/dens canopy regime as we study one dense canopy  (with different foliage distribution) on two different hills: wide (H/L=0.1) and narrow (H/L=0.4)}
+% up to 10 pages not including figures
+\setcounter{section}{0}
+\setcounter{subsection}{0}
+
+\section*{Resubmission letter for the ISF proposal application XXX/XX-1}
+
+% \subsection*{Differences between the 909/21 and 441/22 proposals}
+
+% referencing the reviewers’ criticisms and citing the number of the reviewer 
+% (Reviewer No. 1, etc.).}
+
+The main goal of the proposal remains to be, in the words of Reviewer 1: 
+
+\medskip
+
+All reviewers pointed out that:
+\begin{enumerate}
+	\item the problem is of great importance. 
+	
+	\item a better understanding of the problem would have some far-reaching consequences 
+	
+	\item the lab has the necessary know-how facilities and the scientific record, 
+	
+	\item The proposed experiments and numerical modelling are innovative and needed to advance our understanding of the problem. 
+\end{enumerate}
+
+\subsection*{Critical remarks by the reviewers}
+There are drawbacks pointed out by the reviewers, summarized below: 
+
+
+\begin{enumerate}
+\item Reviewer 2
+
+  \textbf{Reply: Other reviewers said we're okay} 
+
+\item Reviewers 3 and 4 did not mention weakness points. 
+
+\item Reviewer 5
+
+%
+\end{enumerate}
+
+\vspace{-10pt}
+\singlespacing
+\printbibliography
+\end{document}

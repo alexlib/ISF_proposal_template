@@ -1,0 +1,123 @@
+\documentclass[11pt,a4paper]{article}
+% \usepackage[T1]{fontenc}
+% \usepackage{lmodern}
+
+\usepackage[no-math]{fontspec}
+\setmainfont{Arial}
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{natbib}
+
+
+\usepackage{amssymb,amsmath}
+% \usepackage{ifxetex,ifluatex}
+% \usepackage{fixltx2e} % provides \textsubscript
+\usepackage[margin=2.5cm]{geometry}
+% \usepackage{graphicx}
+
+\usepackage{calc}
+
+\newlength{\remaining}
+\newcommand{\titleline}[1]{%
+\setlength{\remaining}{1cm-\widthof{\textsc{#1}}}
+\noindent\underline{\textsc{#1}\hspace*{\remaining}}\par}
+% \begin{document}
+
+% use upquote if available, for straight quotes in verbatim environments
+% \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+%   \usepackage[utf8]{inputenc}
+% \else % if luatex or xelatex
+%   \ifxetex
+%     \usepackage{mathspec}
+%     \usepackage{xltxtra,xunicode}
+%   \else
+%     \usepackage{fontspec}
+%   \fi
+%   \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+%   \newcommand{\euro}{€}
+% \fi
+% % use microtype if available
+% \IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+% \ifxetex
+%   \usepackage[setpagesize=false, % page size defined by xetex
+%               unicode=false, % unicode breaks when used with xetex
+%               xetex]{hyperref}
+% \else
+%   \usepackage[unicode=true]{hyperref}
+% \fi
+% \hypersetup{breaklinks=true,
+%             bookmarks=true,
+%             pdfauthor={},
+%             pdftitle={},
+%             colorlinks=true,
+%             citecolor=blue,
+%             urlcolor=blue,
+%             linkcolor=magenta,
+%             pdfborder={0 0 0}}
+% \urlstyle{same}  % don't use monospace font for urls
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+
+\makeatletter
+\DeclareRobustCommand{\V}{\text{\volumedash}V}
+\newcommand{\volumedash}{%
+  \makebox[0pt][l]{%
+    \ooalign{\hfil\hphantom{$\m@th V$}\hfil\cr\kern0.08em--\hfil\cr}%
+  }%
+}
+\makeatother
+\renewcommand{\d}{\textrm{d}}
+
+\begin{document}
+
+\textbf{Current ISF application No.: XXX/XX \\
+PI Name: Israel Israeli \\
+Research Title: Title }
+
+\bigskip
+
+\begin{center}
+    \textbf{\Large{Objectives, results, achievements \& list of publications of a Recent ISF grant}}
+\end{center}
+
+\textbf{Recent ISF grant No. YYY/YY}
+
+\textbf{Research Title: Slighty different title}
+
+\bigskip
+
+We wanted funding for one thing, but ISF was not convinced. We changed the following stuff and now we hope for your consideration. 
+
+% This study is devoted to these detailed objectives:
+\begin{enumerate}
+
+\item Developed this and that 
+
+\item Solved this and that, see our papers
+ 
+\end{enumerate}
+
+
+\textbf{List of published/accepted papers}
+
+\begin{enumerate}
+
+\item PI1 and PI2, The most important article of this century, 2021
+
+\end{enumerate}
+
+
+
+\textbf{MSc. \& Ph.D. theses}
+
+2020  PhD Thesis, PHD student, Tel Aviv University 
+
+%\bibliographystyle{apalike2}
+%\bibliography{Particles_crossing}
+\end{document}

@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+% \usepackage{lmodern}
+\usepackage[no-math]{fontspec}
+\setmainfont{Arial}
+
+\usepackage[margin=2cm,a4paper]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{graphicx}
+\graphicspath{{./fig/}}
+
+\usepackage{wrapfig}
+\usepackage[font={small,it}]{caption}
+\usepackage[backend=biber,
+%style=authoryear,
+style=numeric,
+doi=false,isbn=false,url=false,eprint=false,
+natbib,
+maxbibnames=10]{biblatex}
+\addbibresource{particles_crossing_interfaces.bib}
+\addbibresource{manual_import.bib}
+% \addbibresource{references.bib}
+
+% % Helper function to get initial letter
+% \def\firstinit#1{\justfirst#1\relax}
+% \def\justfirst#1#2\relax{#1}
+
+% % Format for FirstInitials - LastName (standard implementation)
+% \DeclareNameFormat{firstinits-last}{%
+% \usebibmacro{name:first-last}{#1}{#4}{#5}{#7}%
+% \usebibmacro{name:andothers}}
+
+% % Format for VeryFirstInitial - LastName
+% \DeclareNameFormat{firstfirstinit-last}{%
+% \usebibmacro{name:first-last}{#1}{\firstinit{#4}\adddot}{#5}{#7}%
+% \usebibmacro{name:andothers}}
+
+% % Set format for sortname (bibliography) and labelname (citation)
+% \DeclareNameAlias{sortname}{firstinits-last}
+% \DeclareNameAlias{labelname}{firstfirstinit-last}
+
+
+
+
+
+
+\usepackage{xcolor}
+\newcommand{\alex}[1]{\textcolor{blue}{#1}}
+
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+  
+\titleformat{\subsection}
+  {\normalfont\small\bfseries}{\thesubsection}{1em}{}
+  
+\usepackage{amsmath}  
+\makeatletter
+\DeclareRobustCommand{\V}{\text{\volumedash}V}
+\newcommand{\volumedash}{%
+  \makebox[0pt][l]{%
+    \ooalign{\hfil\hphantom{$\m@th V$}\hfil\cr\kern0.08em--\hfil\cr}%
+  }%
+}
+\makeatother
+
+\begin{document}
+\rightline{ISF application number: XXX/XX}
+\rightline{PI Name: Israel Israeli}
+
+\section*{Basic science declaration}
+% מחקר בסיסי מתייחס למחקר שמטרתו להרחיב ולפתח את בסיס הידע המדעי הקיים. מחקר בסיסי בא לענות על שאלות מדעיות או לבחון הנחות מדעיות הקשורות בהבנת העולם בו אנו חיים.
+%
+%מומלץ לתאר את שאלת המחקר או השערת המחקר המדעית ומדוע לדעת החוקרים המחקר המוצע עונה על היותו מחקר העוסק במדע בסיסי.  
+%
+% מחקר בסיסי תלוי תחום ועל החוקרים להבהיר כיצד המחקר הספציפי שלהם תואם לתחום ותורם לבסיס הידע בתחום.
+% 
+
+The proposed research focuses on a fundamental scientific question: How to write ISF proposal 
+
+
+\end{document}
